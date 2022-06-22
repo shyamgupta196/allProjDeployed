@@ -7,8 +7,6 @@ from PIL import Image
 import os 
 import torchvision
 
-
-
 model = torchvision.models.alexnet(pretrained=True)
 for param in model.parameters():
     param.requires_grad = False
